@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import TimeComponent from './TimeComponent'
 
 import { TimeZones } from '../data/data'
+import ComboUTCTime from './ComboUTCTime';
 
 interface Clock {
   utc: number;
@@ -75,6 +76,7 @@ const TimeList = () => {
           maxLength={5}
           onChange={handlerZoneUTC}
         />
+        <ComboUTCTime onChange={setZoneUTC} />
         <button className='input'>Вставить</button>
       </form>
       {clocks.map((item, index) => 
