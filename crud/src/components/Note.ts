@@ -1,4 +1,4 @@
 interface Note {
-    id: string;
-    text: string;
+    id: number;
+    content: string;
 }
